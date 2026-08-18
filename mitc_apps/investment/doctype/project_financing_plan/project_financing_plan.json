@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-25 12:26:06.028802",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "proj_fin_plan_section",
+  "financing_plan",
+  "local_equity",
+  "local_loan"
+ ],
+ "fields": [
+  {
+   "fieldname": "proj_fin_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Project Financing Plan",
+   "options": "Foreign Equity\nLocal Equity\nLocal Loan\nForeign Loan\nRetained Foreign Investment\nRetained Local Investment"
+  },
+  {
+   "fieldname": "local_equity",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount (USD)",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "local_loan",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total (USD)",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "financing_plan",
+   "fieldtype": "Select",
+   "label": "Financing Plan"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-03 08:03:34.493634",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Project Financing Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

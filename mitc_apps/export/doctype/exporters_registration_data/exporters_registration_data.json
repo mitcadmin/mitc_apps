@@ -1,0 +1,565 @@
+{
+ "actions": [],
+ "autoname": "EXP-REG-.YY.-.MM.-.####",
+ "creation": "2026-08-03 17:35:59.254656",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_details_tab",
+  "company_details_section",
+  "application_type",
+  "company_name",
+  "date_establishment",
+  "legal_status",
+  "name_industry",
+  "nature_business_activity",
+  "column_break_plqj",
+  "business_registration_number",
+  "tax_id",
+  "physical_address",
+  "postal_address",
+  "beneficial_owner_section",
+  "contact_person_salutation",
+  "contact_person_lname",
+  "contact_person_phone",
+  "column_break_y6hi",
+  "contact_person_fname",
+  "contact_person_email",
+  "created_contact",
+  "directors_shareholders_tab",
+  "particulars_shareholders_section",
+  "shareholders_list_table",
+  "details_local_directors",
+  "local_directors_table",
+  "employment",
+  "employees",
+  "employment_summary_section",
+  "locals_column",
+  "int_zptq",
+  "expatriates_column",
+  "int_tvim",
+  "total_column",
+  "int_gklj",
+  "particulars_project_tab",
+  "exporter_details_section",
+  "exporter_name",
+  "exporter_bank_name",
+  "exporter_bank_number",
+  "column_break_fpqr",
+  "status_of_exporter",
+  "status_exporter_other",
+  "size_of_capital_investment_section",
+  "table_ebcz",
+  "value_goods_serv_section",
+  "value_goods_services_table",
+  "annual_turnover_section",
+  "annual_turnover_table",
+  "perc_exp_buss_turn",
+  "perc_exp_buss__table",
+  "section_break_doir",
+  "export_performance",
+  "exist_exp_orders",
+  "column_break_fhcx",
+  "value_cif_for",
+  "total_val_exp_sales",
+  "cred_facili_sec",
+  "banker",
+  "part_cred_enjoyed",
+  "other_cred_fac_enjoyed",
+  "column_break_spod",
+  "manner_recei_pay",
+  "other_manner_recei_pay",
+  "exp_exp_section",
+  "areas_of_concern_column",
+  "areas_concern_option1",
+  "areas_concern_option2",
+  "areas_concern_option3",
+  "areas_concern_freight_costs",
+  "areas_concern_option5",
+  "areas_concern_option6",
+  "column_break_oqze",
+  "areas_concern_explain",
+  "suggestions"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Details "
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "application_type",
+   "fieldtype": "Select",
+   "label": "Application Type",
+   "length": 128,
+   "options": "New\nRenewal\nTransfer\nAmendment\nReplacement"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "length": 128
+  },
+  {
+   "fieldname": "date_establishment",
+   "fieldtype": "Date",
+   "label": "Date of Establishment"
+  },
+  {
+   "fieldname": "legal_status",
+   "fieldtype": "Select",
+   "label": "Legal Status",
+   "length": 128,
+   "options": "Pvt. Ltd\nPrivate Company\nPublic Company\nPartnership\nSME\nCo-operative\nState Owned Corporation\nSole Proprietor"
+  },
+  {
+   "fieldname": "name_industry",
+   "fieldtype": "Data",
+   "label": "Name of Industry",
+   "length": 128
+  },
+  {
+   "fieldname": "nature_business_activity",
+   "fieldtype": "Data",
+   "label": "Nature of Business Activity",
+   "length": 128
+  },
+  {
+   "fieldname": "column_break_plqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_registration_number",
+   "fieldtype": "Data",
+   "label": "Business Registration Number"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Int",
+   "label": "Tax identification Number (TIN)",
+   "length": 8,
+   "non_negative": 1
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address",
+   "length": 128
+  },
+  {
+   "fieldname": "postal_address",
+   "fieldtype": "Small Text",
+   "label": "Postal Address",
+   "length": 128
+  },
+  {
+   "fieldname": "beneficial_owner_section",
+   "fieldtype": "Section Break",
+   "label": "Beneficial Owner"
+  },
+  {
+   "fieldname": "contact_person_salutation",
+   "fieldtype": "Select",
+   "label": "Salutation",
+   "length": 128,
+   "options": "Mr\nMrs\nDr\nProf\nHon\nMadam\nMs"
+  },
+  {
+   "fieldname": "contact_person_lname",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_phone",
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "length": 128
+  },
+  {
+   "fieldname": "column_break_y6hi",
+   "fieldtype": "Column Break",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_fname",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "length": 128
+  },
+  {
+   "fieldname": "created_contact",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Created Contact",
+   "options": "Contact",
+   "read_only": 1,
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "directors_shareholders_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ownership & Employment "
+  },
+  {
+   "fieldname": "particulars_shareholders_section",
+   "fieldtype": "Section Break",
+   "label": "Shareholders"
+  },
+  {
+   "fieldname": "shareholders_list_table",
+   "fieldtype": "Table",
+   "options": "Investment Shareholders Team"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "details_local_directors",
+   "fieldtype": "Section Break",
+   "label": "Directors"
+  },
+  {
+   "fieldname": "local_directors_table",
+   "fieldtype": "Table",
+   "options": "Exporters Directors Team"
+  },
+  {
+   "fieldname": "employment",
+   "fieldtype": "Section Break",
+   "label": "Employment Details"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table",
+   "options": "Employment Details"
+  },
+  {
+   "fieldname": "employment_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Employment Summary"
+  },
+  {
+   "fieldname": "locals_column",
+   "fieldtype": "Column Break",
+   "label": "Locals"
+  },
+  {
+   "fieldname": "int_zptq",
+   "fieldtype": "Int",
+   "label": "Local"
+  },
+  {
+   "fieldname": "expatriates_column",
+   "fieldtype": "Column Break",
+   "label": "Expatriates"
+  },
+  {
+   "fieldname": "int_tvim",
+   "fieldtype": "Int",
+   "label": "Expatriates"
+  },
+  {
+   "fieldname": "total_column",
+   "fieldtype": "Column Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "int_gklj",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "particulars_project_tab",
+   "fieldtype": "Tab Break",
+   "label": "Exporter Particulars"
+  },
+  {
+   "fieldname": "exporter_details_section",
+   "fieldtype": "Section Break",
+   "label": "Exporter Details"
+  },
+  {
+   "fieldname": "exporter_name",
+   "fieldtype": "Data",
+   "label": "Name of Exporter",
+   "length": 128
+  },
+  {
+   "fieldname": "exporter_bank_name",
+   "fieldtype": "Data",
+   "label": "Exporter Bank Name"
+  },
+  {
+   "fieldname": "exporter_bank_number",
+   "fieldtype": "Data",
+   "label": "Exporter Bank Number"
+  },
+  {
+   "fieldname": "column_break_fpqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status_of_exporter",
+   "fieldtype": "Select",
+   "label": "Status of Exporter",
+   "length": 128,
+   "options": "General Merchant\nManufacturer\nGrower\nMining Companies\nEnergy\nInfrastructure\nTourism Service Providers\nOther"
+  },
+  {
+   "fieldname": "status_exporter_other",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "If Other Please Specify Here.",
+   "length": 64,
+   "mandatory_depends_on": "eval:doc.status_of_exporter==\"Other\""
+  },
+  {
+   "fieldname": "value_goods_serv_section",
+   "fieldtype": "Section Break",
+   "label": "Value of Goods/Services Exported"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "value_goods_services_table",
+   "fieldtype": "Table",
+   "options": "Goods Exported"
+  },
+  {
+   "fieldname": "annual_turnover_section",
+   "fieldtype": "Section Break",
+   "label": "Annual Turnover (Both Domestic and Export Sales)"
+  },
+  {
+   "fieldname": "annual_turnover_table",
+   "fieldtype": "Table",
+   "options": "Annual Turnover for Both Domestic and External Sales"
+  },
+  {
+   "fieldname": "perc_exp_buss_turn",
+   "fieldtype": "Section Break",
+   "label": "Percentage of Exports to Total Business Turnover"
+  },
+  {
+   "fieldname": "perc_exp_buss__table",
+   "fieldtype": "Table",
+   "options": "Percentage of Exports to Total Business Turnover"
+  },
+  {
+   "fieldname": "cred_facili_sec",
+   "fieldtype": "Section Break",
+   "label": "Credit/Bank Facilities Details"
+  },
+  {
+   "fieldname": "part_cred_enjoyed",
+   "fieldtype": "Select",
+   "label": "Particulars of Credit/Bank Facilities Enjoyed",
+   "length": 128,
+   "options": "Trade Credit\nMoney Lender\nBank Finance\nOther"
+  },
+  {
+   "fieldname": "other_cred_fac_enjoyed",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "If Other, Please Specify Below",
+   "length": 256
+  },
+  {
+   "fieldname": "column_break_spod",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manner_recei_pay",
+   "fieldtype": "Select",
+   "label": "Manner of Receipt of Payment",
+   "length": 128,
+   "options": "In Advance\nAgaint Confirmed/Unconfirmed LC\nOn Documents Againt Acceptance\nOther"
+  },
+  {
+   "fieldname": "other_manner_recei_pay",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "If Other, Please Specify Below",
+   "length": 256
+  },
+  {
+   "fieldname": "exp_exp_section",
+   "fieldtype": "Section Break",
+   "label": "Exporter Experience"
+  },
+  {
+   "fieldname": "areas_concern_explain",
+   "fieldtype": "Small Text",
+   "label": "Briefly Explain Below."
+  },
+  {
+   "fieldname": "size_of_capital_investment_section",
+   "fieldtype": "Section Break",
+   "label": "Size of Capital Investment"
+  },
+  {
+   "fieldname": "table_ebcz",
+   "fieldtype": "Table",
+   "options": "Size of Capital Investment"
+  },
+  {
+   "fieldname": "areas_of_concern_column",
+   "fieldtype": "Column Break",
+   "label": "Areas of Concern"
+  },
+  {
+   "default": "0",
+   "fieldname": "areas_concern_option1",
+   "fieldtype": "Check",
+   "label": "Bank Finance",
+   "length": 128
+  },
+  {
+   "fieldname": "column_break_oqze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "areas_concern_option2",
+   "fieldtype": "Check",
+   "label": "Low Overseas Prices",
+   "length": 128
+  },
+  {
+   "default": "0",
+   "fieldname": "areas_concern_option3",
+   "fieldtype": "Check",
+   "label": "Tax Allowance",
+   "length": 128
+  },
+  {
+   "default": "0",
+   "fieldname": "areas_concern_freight_costs",
+   "fieldtype": "Check",
+   "label": "Freight Costs",
+   "length": 128
+  },
+  {
+   "default": "0",
+   "fieldname": "areas_concern_option5",
+   "fieldtype": "Check",
+   "label": "Storage Before Shipment",
+   "length": 128
+  },
+  {
+   "default": "0",
+   "fieldname": "areas_concern_option6",
+   "fieldtype": "Check",
+   "label": "Drawback Duty",
+   "length": 128
+  },
+  {
+   "fieldname": "suggestions",
+   "fieldtype": "Small Text",
+   "label": "Suggestions"
+  },
+  {
+   "fieldname": "section_break_doir",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "export_performance",
+   "fieldtype": "Data",
+   "label": "Export Performance"
+  },
+  {
+   "fieldname": "column_break_fhcx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "value_cif_for",
+   "fieldtype": "Currency",
+   "label": "Value of CIF or FOR",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "exist_exp_orders",
+   "fieldtype": "Data",
+   "label": "Existing Export Orders"
+  },
+  {
+   "fieldname": "total_val_exp_sales",
+   "fieldtype": "Currency",
+   "label": "Total Value of Export Sales",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "banker",
+   "fieldtype": "Data",
+   "label": "Banker",
+   "length": 128
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-03 23:11:25.258354",
+ "modified_by": "Administrator",
+ "module": "Export",
+ "name": "Exporters Registration Data",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}
