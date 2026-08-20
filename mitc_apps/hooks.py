@@ -247,9 +247,46 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+
+
+#***** CUSTOM CODE STARTS HERE *****#
+
 get_website_user_home_page = "mitc_apps.website.get_website_user_home_page"
 
-role_home_page = {
-        "Customer": "me",
-        "HD Customer": "me"
-}
+#role_home_page = {
+#        "Customer": "me",
+#        "HD Customer": "me"
+#}
+
+# FIXTURES - SCRIPTS
+
+fixtures = [
+    {
+        "dt": "Server Script",
+        "filters": [
+            ["module", "in", [
+                "Export",
+                "Investment",
+                "MITC Services",
+                "Trade",
+                "MITC Apps"
+            ]]
+        ]
+    },
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["module", "in", [
+                "Export",
+                "Investment",
+                "MITC Services",
+                "Trade",
+                "MITC Apps"
+            ]]
+        ]
+    }
+]
+
+# END OF FIXTURES - SCRIPTS
+
