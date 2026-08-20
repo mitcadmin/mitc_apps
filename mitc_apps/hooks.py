@@ -259,9 +259,10 @@ get_website_user_home_page = "mitc_apps.website.get_website_user_home_page"
 #        "HD Customer": "me"
 #}
 
-# FIXTURES - SCRIPTS
+# FIXTURES
 
 fixtures = [
+# SERVER SCRIPTS
     {
         "dt": "Server Script",
         "filters": [
@@ -274,6 +275,8 @@ fixtures = [
             ]]
         ]
     },
+
+# CLIENT SCRIPTS
     {
         "dt": "Client Script",
         "filters": [
@@ -285,8 +288,47 @@ fixtures = [
                 "MITC Apps"
             ]]
         ]
+    },
+
+# ROLES & PERMISSIONS
+    {
+        "dt": "Role",
+        "filters": [
+            ["name", "in", ["Certificate Manager", "Portal Client","Planning and Research"]]
+        ]
+    },
+    {
+        "dt": "Custom DocPerm",
+        "filters": [
+            ["role", "in", ["Certificate Manager","Portal Client","Planning and Research"]]
+        ]
+    },
+
+# WORKFLOWS AND WK STATES
+    {
+        "dt": "Workflow",
+        "filters": [
+            ["name", "in", ["Export Certificate Application WF Active"]]
+        ]
+    },
+
+    # Workflow States
+    {
+        "dt": "Workflow State",
+        "filters": [
+            ["name", "in", [
+                "Draft",
+                "Under Review",
+                "Under Evaluation",
+                "Processing Payment",
+                "Approved",
+                "Rejected",
+                "Cancelled"
+            ]]
+        ]
     }
+
 ]
 
-# END OF FIXTURES - SCRIPTS
+# END OF FIXTURES
 
