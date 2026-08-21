@@ -1,0 +1,78 @@
+{
+ "accept_payment": 0,
+ "allow_comments": 1,
+ "allow_delete": 1,
+ "allow_edit": 1,
+ "allow_incomplete": 0,
+ "allow_multiple": 1,
+ "allow_print": 0,
+ "amount": 0.0,
+ "amount_based_on_field": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 1,
+ "button_label": "Save",
+ "condition_json": "[]",
+ "creation": "2026-02-26 14:18:16.205974",
+ "currency": "USD",
+ "doc_type": "Investment Certificate",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "application_type",
+   "fieldtype": "Select",
+   "label": "Application Type",
+   "options": "\nNew\nRenewal\nTransfer\nAmendment\nReplacement"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Int",
+   "label": "Tax identification Number (TIN)"
+  },
+  {
+   "fieldname": "contact_person_email",
+   "fieldtype": "Data",
+   "label": "Contact Email"
+  },
+  {
+   "fieldname": "contact_person_phone",
+   "fieldtype": "Phone",
+   "label": "Contact Phone"
+  },
+  {
+   "fieldname": "sector_operations",
+   "fieldtype": "Select",
+   "label": "Main Sector of Operations",
+   "options": "Agro-Processing\nMining\nEnergy\nTourism\nManufacturing\nEntertainment\nFinance\nConsumer Industry\nTransport"
+  }
+ ],
+ "list_title": "Applications",
+ "login_required": 1,
+ "max_attachment_size": 20,
+ "modified": "2026-07-20 22:01:12.049418",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "investment-certificate-application",
+ "owner": "Administrator",
+ "payment_button_label": "Buy Now",
+ "published": 0,
+ "route": "investment-certificate-application",
+ "show_attachments": 1,
+ "show_list": 1,
+ "show_sidebar": 1,
+ "title": "Investment Certificate Application",
+ "web_form_fields": []
+}

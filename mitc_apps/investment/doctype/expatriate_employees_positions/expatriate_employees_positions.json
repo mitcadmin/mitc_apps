@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-25 09:18:25.912328",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exp_emp_name",
+  "last_name",
+  "exp_emp_pos",
+  "nationality",
+  "permit_status",
+  "permit_expiry_date",
+  "surrogate_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "exp_emp_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "length": 128
+  },
+  {
+   "fieldname": "exp_emp_pos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position",
+   "length": 128
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "permit_status",
+   "fieldtype": "Select",
+   "label": "Permit Status",
+   "options": "First Renewal\nSecond Renewal\nThird Renewal"
+  },
+  {
+   "fieldname": "permit_expiry_date",
+   "fieldtype": "Date",
+   "label": "Permit Expiry Date"
+  },
+  {
+   "fieldname": "surrogate_id",
+   "fieldtype": "Attach Image",
+   "label": "Surrogate ID"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-01 18:50:12.191064",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Expatriate Employees Positions",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

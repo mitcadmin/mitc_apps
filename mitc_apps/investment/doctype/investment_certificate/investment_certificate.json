@@ -1,0 +1,521 @@
+{
+ "actions": [],
+ "autoname": "IAC-.YY.-.MM.-.###",
+ "creation": "2026-02-23 20:15:26.085053",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_details_tab",
+  "company_details_section",
+  "application_type",
+  "tax_id",
+  "physical_address",
+  "column_break_plqj",
+  "company_name",
+  "business_registration_number",
+  "postal_address",
+  "beneficial_owner_section",
+  "contact_person_salutation",
+  "contact_person_lname",
+  "contact_person_phone",
+  "beneficial_owner_passport",
+  "column_break_y6hi",
+  "contact_person_fname",
+  "contact_person_email",
+  "created_contact",
+  "is_agent_contact",
+  "directors_shareholders_tab",
+  "particulars_shareholders_section",
+  "shareholders_list_table",
+  "details_local_directors",
+  "local_directors_table",
+  "expatriate_positions_actual_section",
+  "table_ttiy",
+  "employment",
+  "employees",
+  "employment_summary_section",
+  "locals_column",
+  "int_zptq",
+  "expatriates_column",
+  "int_tvim",
+  "total_column",
+  "int_gklj",
+  "particulars_project_tab",
+  "particulars_project_section",
+  "sector_operations",
+  "type_invesment",
+  "project_location",
+  "column_break_zpxn",
+  "project_commencement_year",
+  "new_investment_level",
+  "new_emp_level",
+  "project_implementation_details_section",
+  "financing_plan_column",
+  "table_sfrl",
+  "proj_inv_cost",
+  "column_break_bvxx",
+  "proj_implem_stages_table",
+  "section_break_wkjp",
+  "project_requirements_column",
+  "project_requirements_details",
+  "column_break_cjqw",
+  "productsservices",
+  "documents_tab",
+  "documents_section",
+  "business_plan",
+  "cert_incorporation_mw",
+  "memo_arti_assoc",
+  "column_break_fssp",
+  "arti_assoc",
+  "shareholder_comp_cert",
+  "project_brief",
+  "criminal_disclosure_section",
+  "criminal_disclosure",
+  "amended_from",
+  "inv_app_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "length": 128
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Investment Certificate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Details "
+  },
+  {
+   "fieldname": "particulars_shareholders_section",
+   "fieldtype": "Section Break",
+   "label": "Shareholders"
+  },
+  {
+   "fieldname": "particulars_project_tab",
+   "fieldtype": "Tab Break",
+   "label": "Project Particulars"
+  },
+  {
+   "fieldname": "particulars_project_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of The Project"
+  },
+  {
+   "fieldname": "type_invesment",
+   "fieldtype": "Select",
+   "label": "Type of Investment",
+   "options": "New\nPPP\nMerger\nAquisition\nExisting\nExpansion"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents & Disclosure"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "description": "(Please attach PDF, Word formats only)",
+   "fieldname": "business_plan",
+   "fieldtype": "Attach",
+   "label": "Business Plan"
+  },
+  {
+   "fieldname": "postal_address",
+   "fieldtype": "Small Text",
+   "label": "Postal Address",
+   "length": 128
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address",
+   "length": 128
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Int",
+   "label": "Tax identification Number (TIN)",
+   "length": 8,
+   "non_negative": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "details_local_directors",
+   "fieldtype": "Section Break",
+   "label": "Directors"
+  },
+  {
+   "fieldname": "local_directors_table",
+   "fieldtype": "Table",
+   "options": "Local Directors Team"
+  },
+  {
+   "fieldname": "sector_operations",
+   "fieldtype": "Select",
+   "label": "Main Sector of Operations",
+   "length": 64,
+   "options": "Agro-Processing\nMining\nEnergy\nTourism\nManufacturing\nEntertainment\nFinance\nConsumer Industry\nTransport"
+  },
+  {
+   "fieldname": "project_location",
+   "fieldtype": "Select",
+   "label": "Project Location",
+   "length": 128,
+   "options": "Lilongwe\nBlantyre\nZomba\nMzuzu\nKaronga\nSalima\nMangochi\nMulanje\nNsanje\nChitipa"
+  },
+  {
+   "description": "(Please attach PDF, Word, PNG, JPEG, JPG formats only)",
+   "fieldname": "cert_incorporation_mw",
+   "fieldtype": "Attach",
+   "label": "Certificate of Incorporation in Malawi"
+  },
+  {
+   "description": "(Please attach PDF, Word formats only)",
+   "fieldname": "memo_arti_assoc",
+   "fieldtype": "Attach",
+   "label": "Memorandum & Articles of Association"
+  },
+  {
+   "description": "(3-5 Paged Summary of Project Which will be sent to the Environmental \nAffairs Department to determine whether project requires Environmental Impact \nAssessment Study)",
+   "fieldname": "project_brief",
+   "fieldtype": "Attach",
+   "label": "Project Brief"
+  },
+  {
+   "fieldname": "application_type",
+   "fieldtype": "Select",
+   "label": "Application Type",
+   "length": 128,
+   "options": "New\nRenewal\nTransfer\nAmendment\nReplacement"
+  },
+  {
+   "fieldname": "column_break_plqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person_phone",
+   "fieldtype": "Phone",
+   "label": "Phone Number",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "length": 128
+  },
+  {
+   "fieldname": "column_break_zpxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_commencement_year",
+   "fieldtype": "Date",
+   "label": "Project Commencement Year"
+  },
+  {
+   "fieldname": "new_investment_level",
+   "fieldtype": "Currency",
+   "label": "New Investment Level (USD)",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "new_emp_level",
+   "fieldtype": "Int",
+   "label": "New Employment Level",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "proj_inv_cost",
+   "fieldtype": "Currency",
+   "label": "Project Investment Cost (USD)",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "criminal_disclosure_section",
+   "fieldtype": "Section Break",
+   "label": "Criminal Disclosure"
+  },
+  {
+   "default": "No",
+   "fieldname": "criminal_disclosure",
+   "fieldtype": "Select",
+   "label": "Have you or any Directors/Shareholders or Entity been convicted of a crime?",
+   "length": 128,
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "column_break_fssp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(Please attach PDF, Word, PNG, JPEG, JPG formats only)",
+   "fieldname": "arti_assoc",
+   "fieldtype": "Attach",
+   "label": "Articles of Association"
+  },
+  {
+   "description": "(Please attach PDF, PNG, JPEG, JPG formats only)",
+   "fieldname": "shareholder_comp_cert",
+   "fieldtype": "Attach",
+   "label": "Shareholder Company Certificates"
+  },
+  {
+   "fieldname": "contact_person_fname",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_lname",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "length": 128
+  },
+  {
+   "fieldname": "created_contact",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Created Contact",
+   "options": "Contact",
+   "read_only": 1,
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "contact_person_salutation",
+   "fieldtype": "Select",
+   "label": "Salutation",
+   "length": 128,
+   "options": "Mr\nMrs\nDr\nProf\nHon\nMadam\nMs"
+  },
+  {
+   "fieldname": "directors_shareholders_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ownership & Employment "
+  },
+  {
+   "fieldname": "business_registration_number",
+   "fieldtype": "Data",
+   "label": "Business Registration Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_agent_contact",
+   "fieldtype": "Check",
+   "label": "Is Agent?",
+   "length": 128
+  },
+  {
+   "fieldname": "column_break_y6hi",
+   "fieldtype": "Column Break",
+   "length": 128
+  },
+  {
+   "fieldname": "employment",
+   "fieldtype": "Section Break",
+   "label": "Employment Details"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table",
+   "options": "Employment Details"
+  },
+  {
+   "fieldname": "shareholders_list_table",
+   "fieldtype": "Table",
+   "options": "Investment Shareholders Team"
+  },
+  {
+   "fieldname": "section_break_wkjp",
+   "fieldtype": "Section Break",
+   "label": "Requirements   & Products/Services"
+  },
+  {
+   "fieldname": "project_requirements_details",
+   "fieldtype": "Table",
+   "options": "Project Requirements"
+  },
+  {
+   "fieldname": "column_break_cjqw",
+   "fieldtype": "Column Break",
+   "label": "Products/Services"
+  },
+  {
+   "fieldname": "productsservices",
+   "fieldtype": "Table",
+   "options": "Products Detail"
+  },
+  {
+   "fieldname": "project_implementation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Financing & Implementation Plan"
+  },
+  {
+   "fieldname": "proj_implem_stages_table",
+   "fieldtype": "Table",
+   "options": "Implementation Stages"
+  },
+  {
+   "fieldname": "expatriate_positions_actual_section",
+   "fieldtype": "Section Break",
+   "label": "Expatriate Positions (Actual)"
+  },
+  {
+   "fieldname": "table_ttiy",
+   "fieldtype": "Table",
+   "options": "Expatriate Employees Positions"
+  },
+  {
+   "fieldname": "table_sfrl",
+   "fieldtype": "Table",
+   "options": "Project Financing Plan"
+  },
+  {
+   "fieldname": "column_break_bvxx",
+   "fieldtype": "Column Break",
+   "label": "Implementation Plan"
+  },
+  {
+   "fieldname": "employment_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Employment Summary"
+  },
+  {
+   "fieldname": "locals_column",
+   "fieldtype": "Column Break",
+   "label": "Locals"
+  },
+  {
+   "fieldname": "int_zptq",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "expatriates_column",
+   "fieldtype": "Column Break",
+   "label": "Expatriates"
+  },
+  {
+   "fieldname": "int_tvim",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "total_column",
+   "fieldtype": "Column Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "int_gklj",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "financing_plan_column",
+   "fieldtype": "Column Break",
+   "label": "Financing Plan"
+  },
+  {
+   "fieldname": "project_requirements_column",
+   "fieldtype": "Column Break",
+   "label": "Project Requirements"
+  },
+  {
+   "fieldname": "beneficial_owner_section",
+   "fieldtype": "Section Break",
+   "label": "Beneficial Owner"
+  },
+  {
+   "description": "Scanned copy of passport page showing your picture and bio-data.",
+   "fieldname": "beneficial_owner_passport",
+   "fieldtype": "Attach",
+   "label": "Passport"
+  },
+  {
+   "default": "Under Review",
+   "fieldname": "inv_app_status",
+   "fieldtype": "Select",
+   "label": "Application Status",
+   "options": "Draft\nUnder Review\nUnder Evaluation\nApplication Approved\nApplication Rejected",
+   "print_hide": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-06 18:47:46.896015",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Investment Certificate",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

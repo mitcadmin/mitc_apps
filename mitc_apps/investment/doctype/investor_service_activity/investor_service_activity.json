@@ -1,0 +1,551 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "INV-ATV-LOG-.YYYY.-.MM.-.##",
+ "creation": "2026-08-10 22:59:14.543269",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_1_tab",
+  "activity_nformation",
+  "activity_date",
+  "activity_type",
+  "activity_name",
+  "activity_category",
+  "section",
+  "column_break_rpoh",
+  "reporting_officer",
+  "activity_status",
+  "activity_description",
+  "assignment_information",
+  "date_assigned",
+  "due_date",
+  "column_break_xdnp",
+  "priority",
+  "status",
+  "investment_certificate_information",
+  "application_reference_number",
+  "investment_sector",
+  "application_received_date",
+  "processing_start_date",
+  "approval_date",
+  "certificate_issued_date",
+  "column_break_zhtb",
+  "investor_company",
+  "certificate_number",
+  "investment_value",
+  "certificate_status",
+  "processing_remarks",
+  "section_break_lfvx",
+  "issue_request_raised",
+  "action_taken",
+  "responsible_institution",
+  "aftercare_status",
+  "column_break_dmpn",
+  "resolution",
+  "follow_up_date",
+  "resolution_date",
+  "aftercare_remarks",
+  "investor_meeting_information",
+  "meeting_date",
+  "meeting_type",
+  "meeting_location",
+  "issues_discussed",
+  "purpose_of_meeting",
+  "column_break_zxbd",
+  "eeting_outcome",
+  "action_points",
+  "follow_up_equirements",
+  "follow_date",
+  "follow_up_required",
+  "performance_information",
+  "performance_target",
+  "variance",
+  "actual_achievement",
+  "output_achievement",
+  "column_break_xrug",
+  "outcome",
+  "performance_remarks",
+  "challenges_and_escalation",
+  "challenge_encountered",
+  "cause_of_challenge",
+  "escalation_details",
+  "column_break_mfih",
+  "action",
+  "management_intervention",
+  "escalation_status",
+  "resolution_management_decision",
+  "supporting_documents",
+  "investment_applications",
+  "reports",
+  "column_break_dbdy",
+  "investment_certificates",
+  "supporting_evidence",
+  "column_break_ttfm",
+  "correspondence",
+  "meeting_minutes",
+  "tab_2_tab",
+  "remarks_way_forward",
+  "system_use_only_tab",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Investor Service Activity",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "activity_date",
+   "fieldtype": "Date",
+   "label": "Activity Date"
+  },
+  {
+   "fieldname": "column_break_rpoh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Robins Mwanga",
+   "fieldname": "reporting_officer",
+   "fieldtype": "Select",
+   "label": "Reporting Officer",
+   "options": "Robins Mwanga"
+  },
+  {
+   "fieldname": "remarks_way_forward",
+   "fieldtype": "Long Text",
+   "label": "Remarks/Way Forward"
+  },
+  {
+   "fieldname": "tab_1_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 1"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "system_use_only_tab",
+   "fieldtype": "Tab Break",
+   "label": "System Use Only"
+  },
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Data",
+   "label": "Activity Type"
+  },
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Data",
+   "label": "Activity Name"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section"
+  },
+  {
+   "fieldname": "column_break_xdnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Robins Mwanga",
+   "fieldname": "activity_description",
+   "fieldtype": "Small Text",
+   "label": "Activity Description",
+   "options": "Robins Mwanga"
+  },
+  {
+   "default": "Completed",
+   "fieldname": "activity_status",
+   "fieldtype": "Select",
+   "label": "Activity Status",
+   "options": "Completed\nPlanned\nIn Progress\nNo"
+  },
+  {
+   "fieldname": "activity_nformation",
+   "fieldtype": "Section Break",
+   "label": "Activity Information"
+  },
+  {
+   "depends_on": "eval:doc.activity_category == 'Investment Certificate'",
+   "fieldname": "activity_category",
+   "fieldtype": "Select",
+   "label": "Activity Category",
+   "options": "Investment Certificate\nInvestor Aftercare\nInvestor Meeting\nInvestor Facilitation\nInvestor Follow-up\nSite Visit\nInvestor Inquiry\nInvestment Promotion\nInvestment Project Monitoring\nOther"
+  },
+  {
+   "fieldname": "assignment_information",
+   "fieldtype": "Section Break",
+   "label": "Assignment Information"
+  },
+  {
+   "fieldname": "date_assigned",
+   "fieldtype": "Date",
+   "label": "Date Assigned"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Assigned\nIn Progress\nPending\nCompleted\nOverdue\nCancelled\nEscalated"
+  },
+  {
+   "fieldname": "investment_certificate_information",
+   "fieldtype": "Section Break",
+   "label": "Investment Certificate Information"
+  },
+  {
+   "fieldname": "column_break_zhtb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "application_reference_number",
+   "fieldtype": "Data",
+   "label": "Application/Reference Number"
+  },
+  {
+   "fieldname": "investor_company",
+   "fieldtype": "Data",
+   "label": "Investor/Company"
+  },
+  {
+   "default": "Agruculture",
+   "fieldname": "investment_sector",
+   "fieldtype": "Select",
+   "label": "Investment Sector",
+   "options": "Agruculture\nAgribusiness\nTourism\nTechnology"
+  },
+  {
+   "fieldname": "investment_value",
+   "fieldtype": "Currency",
+   "label": "Investment Value"
+  },
+  {
+   "fieldname": "application_received_date",
+   "fieldtype": "Date",
+   "label": "Application Received Date"
+  },
+  {
+   "fieldname": "processing_start_date",
+   "fieldtype": "Date",
+   "label": "Processing Start Date"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "certificate_issued_date",
+   "fieldtype": "Date",
+   "label": "Certificate Issued Date"
+  },
+  {
+   "fieldname": "certificate_number",
+   "fieldtype": "Data",
+   "label": "Certificate Number"
+  },
+  {
+   "fieldname": "certificate_status",
+   "fieldtype": "Select",
+   "label": "Certificate Status",
+   "options": "Received\nUnder Processing\nPending Documents\nSubmitted for Approval\nApproved\nIssued\nRejected\nOn Hold"
+  },
+  {
+   "fieldname": "processing_remarks",
+   "fieldtype": "Small Text",
+   "label": "Processing Remarks"
+  },
+  {
+   "fieldname": "section_break_lfvx",
+   "fieldtype": "Section Break",
+   "label": "Investor Aftercare"
+  },
+  {
+   "fieldname": "issue_request_raised",
+   "fieldtype": "Small Text",
+   "label": "Issue/Request Raised"
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Small Text",
+   "label": "Action Taken"
+  },
+  {
+   "fieldname": "responsible_institution",
+   "fieldtype": "Data",
+   "label": "Responsible Institution"
+  },
+  {
+   "fieldname": "aftercare_status",
+   "fieldtype": "Select",
+   "label": "Aftercare Status",
+   "options": "Open\nIn Progress\nPending\nResolved\nEscalated\nClosed"
+  },
+  {
+   "fieldname": "column_break_dmpn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Small Text",
+   "label": "Resolution"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow-up Date"
+  },
+  {
+   "fieldname": "resolution_date",
+   "fieldtype": "Date",
+   "label": "Resolution Date"
+  },
+  {
+   "fieldname": "aftercare_remarks",
+   "fieldtype": "Small Text",
+   "label": "Aftercare Remarks"
+  },
+  {
+   "fieldname": "investor_meeting_information",
+   "fieldtype": "Section Break",
+   "label": "Investor Meeting Information"
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "column_break_zxbd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_type",
+   "fieldtype": "Select",
+   "label": "Meeting Type",
+   "options": "Physical\nVirtual\nTelephone\nSite Visit\nOther"
+  },
+  {
+   "fieldname": "meeting_location",
+   "fieldtype": "Data",
+   "label": "Meeting Location"
+  },
+  {
+   "fieldname": "purpose_of_meeting",
+   "fieldtype": "Small Text",
+   "label": "Purpose of Meeting"
+  },
+  {
+   "fieldname": "issues_discussed",
+   "fieldtype": "Small Text",
+   "label": "Issues Discussed"
+  },
+  {
+   "fieldname": "eeting_outcome",
+   "fieldtype": "Small Text",
+   "label": "Meeting Outcome"
+  },
+  {
+   "fieldname": "action_points",
+   "fieldtype": "Small Text",
+   "label": "Action Points"
+  },
+  {
+   "default": "0",
+   "fieldname": "follow_up_required",
+   "fieldtype": "Check",
+   "label": "Follow-up Required"
+  },
+  {
+   "fieldname": "follow_up_equirements",
+   "fieldtype": "Small Text",
+   "label": "Follow-up Requirements"
+  },
+  {
+   "fieldname": "follow_date",
+   "fieldtype": "Date",
+   "label": "Follow Up Date"
+  },
+  {
+   "fieldname": "performance_information",
+   "fieldtype": "Section Break",
+   "label": "Performance Information"
+  },
+  {
+   "fieldname": "performance_target",
+   "fieldtype": "Float",
+   "label": "Performance Target"
+  },
+  {
+   "fieldname": "variance",
+   "fieldtype": "Float",
+   "label": "Variance"
+  },
+  {
+   "fieldname": "actual_achievement",
+   "fieldtype": "Float",
+   "label": "Actual Achievement"
+  },
+  {
+   "fieldname": "output_achievement",
+   "fieldtype": "Small Text",
+   "label": "Output/Achievement"
+  },
+  {
+   "fieldname": "column_break_xrug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Small Text",
+   "label": "Outcome"
+  },
+  {
+   "fieldname": "performance_remarks",
+   "fieldtype": "Small Text",
+   "label": "Performance Remarks"
+  },
+  {
+   "fieldname": "challenges_and_escalation",
+   "fieldtype": "Section Break",
+   "label": "Challenges & Escalation"
+  },
+  {
+   "fieldname": "challenge_encountered",
+   "fieldtype": "Small Text",
+   "label": "Challenge Encountered"
+  },
+  {
+   "fieldname": "column_break_mfih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cause_of_challenge",
+   "fieldtype": "Small Text",
+   "label": "Cause of Challenge"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Small Text",
+   "label": "Action Taken"
+  },
+  {
+   "default": "0",
+   "fieldname": "management_intervention",
+   "fieldtype": "Check",
+   "label": "Management Intervention Required"
+  },
+  {
+   "fieldname": "escalation_details",
+   "fieldtype": "Small Text",
+   "label": "Escalation Details"
+  },
+  {
+   "fieldname": "escalation_status",
+   "fieldtype": "Select",
+   "label": "Escalation Status",
+   "options": "Not Required\nPending\nEscalated\nUnder Review\nResolved"
+  },
+  {
+   "fieldname": "resolution_management_decision",
+   "fieldtype": "Small Text",
+   "label": "Resolution/Management Decision"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Section Break",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "investment_applications",
+   "fieldtype": "Attach",
+   "label": "Investment Applications"
+  },
+  {
+   "fieldname": "column_break_dbdy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "investment_certificates",
+   "fieldtype": "Attach",
+   "label": "Investment Certificates"
+  },
+  {
+   "fieldname": "column_break_ttfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "correspondence",
+   "fieldtype": "Attach",
+   "label": "Correspondence"
+  },
+  {
+   "fieldname": "meeting_minutes",
+   "fieldtype": "Attach",
+   "label": "Meeting Minutes"
+  },
+  {
+   "fieldname": "reports",
+   "fieldtype": "Attach",
+   "label": "Reports"
+  },
+  {
+   "fieldname": "supporting_evidence",
+   "fieldtype": "Attach",
+   "label": "Supporting Evidence"
+  }
+ ],
+ "grid_page_length": 50,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-17 11:37:12.791136",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Investor Service Activity",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
