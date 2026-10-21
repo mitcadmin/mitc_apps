@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Daily Subsistence Allowance",
+  "enabled": 0,
+  "modified": "2026-07-31 01:07:48.957863",
+  "module": "MITC Services",
+  "name": "automatically add totals in DSA form",
+  "script": "frappe.ui.form.on('Daily Subsistence Allowance', {\n    accomo_not_paid_costs(frm) { calculate_dsa_total(frm); },\n    accomo_paid_costs(frm) { calculate_dsa_total(frm); },\n    travel_ticket_costs(frm) { calculate_dsa_total(frm); },\n    receipt_claim(frm) { calculate_dsa_total(frm); },\n    meal_allowance(frm) { calculate_dsa_total(frm); },\n    cost_of_accomo(frm) { calculate_dsa_total(frm); },\n    fuel_refund_costs(frm) { calculate_dsa_total(frm); }\n});\n\nfunction calculate_dsa_total(frm) {\n    // Fetches each field value, defaulting to 0 if empty\n    let acc_not_paid = frm.doc.accomo_not_paid_costs || 0;\n    let acc_paid = frm.doc.accomo_paid_costs || 0;\n    let ticket = frm.doc.travel_ticket_costs || 0;\n    let receipt = frm.doc.receipt_claim || 0;\n    let meal = frm.doc.meal_allowance || 0;\n    let cost_acc = frm.doc.cost_of_accomo || 0;\n    let fuel = frm.doc.fuel_refund_costs || 0;\n    \n    // Calculates the total sum of fields 2 through 8\n    let total = acc_not_paid + acc_paid + ticket + receipt + meal + cost_acc + fuel;\n    \n    // Sets the calculated sum into your target field\n    frm.set_value('dsa_costs_total', total);\n}\n",
+  "view": "Form"
+ }
+]

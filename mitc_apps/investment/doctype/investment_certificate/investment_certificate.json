@@ -1,0 +1,592 @@
+{
+ "actions": [],
+ "autoname": "INV-APP-.YY.-.MM.-.###",
+ "creation": "2026-10-15 17:40:26.033729",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_details_tab",
+  "company_details_section",
+  "application_type",
+  "company_name",
+  "date_establishment",
+  "legal_status",
+  "name_industry",
+  "nature_business_activity",
+  "column_break_plqj",
+  "business_registration_number",
+  "tax_id",
+  "physical_address",
+  "postal_address",
+  "beneficial_owner_section",
+  "contact_person_salutation",
+  "contact_person_lname",
+  "contact_person_phone",
+  "beneficial_owner_passport",
+  "column_break_y6hi",
+  "contact_person_fname",
+  "contact_person_email",
+  "created_contact",
+  "is_agent_contact",
+  "directors_shareholders_tab",
+  "particulars_shareholders_section",
+  "shareholders_list_table",
+  "details_local_directors",
+  "local_directors_table",
+  "employment",
+  "employees",
+  "employment_summary_section",
+  "locals_column",
+  "int_zptq",
+  "expatriates_column",
+  "int_tvim",
+  "total_column",
+  "int_gklj",
+  "particulars_project_tab",
+  "exporter_details_section",
+  "type_investment",
+  "project_location",
+  "project_commencement_year",
+  "column_break_fpqr",
+  "main_sec_opera",
+  "products_services",
+  "reason_amend_rep_trans",
+  "project_financing_details_section",
+  "table_xrqt",
+  "pfd_total_foreign_usd",
+  "pfd_total_local_usd",
+  "pfd_grand_total_usd",
+  "documents_tab",
+  "documents_section",
+  "proof_of_payment",
+  "cert_incorporation_mw",
+  "memo_arti_assoc",
+  "business_plan_doc",
+  "project_brief",
+  "column_break_fssp",
+  "arti_assoc",
+  "shareholder_comp_cert",
+  "brief_descrip_expat_doc",
+  "suggestions_for_improvements",
+  "disclosure_section",
+  "crime_disclosure",
+  "date_of_signing",
+  "applicant_declaration",
+  "for_organizational_use_tab",
+  "organizational_use",
+  "column_break_eqmb",
+  "certificate_expiry_date",
+  "helpdesk_ticket_link",
+  "column_break_ywkr",
+  "exp_app_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Details "
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "application_type",
+   "fieldtype": "Select",
+   "label": "Application Type",
+   "length": 128,
+   "options": "New\nRenewal"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "length": 128
+  },
+  {
+   "fieldname": "date_establishment",
+   "fieldtype": "Date",
+   "label": "Date of Establishment"
+  },
+  {
+   "fieldname": "legal_status",
+   "fieldtype": "Select",
+   "label": "Legal Status",
+   "length": 128,
+   "options": "Pvt. Ltd\nPrivate Company\nPublic Company\nPartnership\nSME\nCo-operative\nState Owned Corporation\nSole Proprietor"
+  },
+  {
+   "fieldname": "name_industry",
+   "fieldtype": "Data",
+   "label": "Name of Industry",
+   "length": 128
+  },
+  {
+   "fieldname": "nature_business_activity",
+   "fieldtype": "Data",
+   "label": "Nature of Business Activity",
+   "length": 128
+  },
+  {
+   "fieldname": "column_break_plqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_registration_number",
+   "fieldtype": "Data",
+   "label": "Business Registration Number"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Int",
+   "label": "Tax identification Number (TIN)",
+   "length": 8,
+   "non_negative": 1
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address",
+   "length": 128
+  },
+  {
+   "fieldname": "postal_address",
+   "fieldtype": "Small Text",
+   "label": "Postal Address",
+   "length": 128
+  },
+  {
+   "fieldname": "beneficial_owner_section",
+   "fieldtype": "Section Break",
+   "label": "Beneficial Owner"
+  },
+  {
+   "fieldname": "contact_person_salutation",
+   "fieldtype": "Select",
+   "label": "Salutation",
+   "length": 128,
+   "options": "Mr\nMrs\nDr\nProf\nHon\nMadam\nMs"
+  },
+  {
+   "fieldname": "contact_person_lname",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_phone",
+   "fieldtype": "Phone",
+   "label": "Phone Number",
+   "length": 128
+  },
+  {
+   "description": "Scanned copy of any Identification document showing your picture and bio-data.",
+   "fieldname": "beneficial_owner_passport",
+   "fieldtype": "Attach",
+   "label": "ID (Passport, National ID, Drivers License)"
+  },
+  {
+   "fieldname": "column_break_y6hi",
+   "fieldtype": "Column Break",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_fname",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "length": 128
+  },
+  {
+   "fieldname": "contact_person_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "length": 128
+  },
+  {
+   "fieldname": "created_contact",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Created Contact",
+   "options": "Contact",
+   "read_only": 1,
+   "show_on_timeline": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_agent_contact",
+   "fieldtype": "Check",
+   "label": "Is Agent?",
+   "length": 128
+  },
+  {
+   "fieldname": "directors_shareholders_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ownership & Employment "
+  },
+  {
+   "fieldname": "particulars_shareholders_section",
+   "fieldtype": "Section Break",
+   "label": "Shareholders"
+  },
+  {
+   "fieldname": "shareholders_list_table",
+   "fieldtype": "Table",
+   "options": "Investment Shareholders Team"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "details_local_directors",
+   "fieldtype": "Section Break",
+   "label": "Directors"
+  },
+  {
+   "fieldname": "local_directors_table",
+   "fieldtype": "Table",
+   "options": "Investment Directors Team"
+  },
+  {
+   "fieldname": "employment",
+   "fieldtype": "Section Break",
+   "label": "Employment Details"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table",
+   "options": "Employment Details"
+  },
+  {
+   "fieldname": "employment_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Employment Summary"
+  },
+  {
+   "fieldname": "locals_column",
+   "fieldtype": "Column Break",
+   "label": "Locals"
+  },
+  {
+   "fieldname": "int_zptq",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "expatriates_column",
+   "fieldtype": "Column Break",
+   "label": "Expatriates"
+  },
+  {
+   "fieldname": "int_tvim",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "total_column",
+   "fieldtype": "Column Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "int_gklj",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "particulars_project_tab",
+   "fieldtype": "Tab Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "exporter_details_section",
+   "fieldtype": "Section Break",
+   "label": "Investment Details"
+  },
+  {
+   "fieldname": "column_break_fpqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents & Disclosure"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "description": "(Please attach PDF, JPG, JPEG or PNG formats only)\nDocument should clearly show payment reference number, amount and date.",
+   "fieldname": "proof_of_payment",
+   "fieldtype": "Attach",
+   "label": "Proof of Payment",
+   "reqd": 1
+  },
+  {
+   "description": "(Please attach PDF, Word, PNG, JPEG, JPG formats only)",
+   "fieldname": "cert_incorporation_mw",
+   "fieldtype": "Attach",
+   "label": "Certificate of Incorporation in Malawi"
+  },
+  {
+   "description": "(Please attach PDF, Word formats only)",
+   "fieldname": "memo_arti_assoc",
+   "fieldtype": "Attach",
+   "label": "Memorandum & Articles of Association"
+  },
+  {
+   "fieldname": "column_break_fssp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(Please attach PDF, Word, PNG, JPEG, JPG formats only)",
+   "fieldname": "arti_assoc",
+   "fieldtype": "Attach",
+   "label": "Articles of Association"
+  },
+  {
+   "description": "(Please attach PDF, PNG, JPEG, JPG formats only)",
+   "fieldname": "shareholder_comp_cert",
+   "fieldtype": "Attach",
+   "label": "Shareholder Company Certificates"
+  },
+  {
+   "description": "(Max 256 Characters)",
+   "fieldname": "suggestions_for_improvements",
+   "fieldtype": "Small Text",
+   "label": "Suggestions for Improvement in Existing Services (please give a brief narration)",
+   "length": 256
+  },
+  {
+   "fieldname": "disclosure_section",
+   "fieldtype": "Section Break",
+   "label": "Applicant Disclosure"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "applicant_declaration",
+   "fieldtype": "Select",
+   "label": "I/We hereby declare that the above information is true and correct to the best of my/our knowledge and belief. ",
+   "length": 128,
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "date_of_signing",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "for_organizational_use_tab",
+   "fieldtype": "Tab Break",
+   "label": "For Organizational Use"
+  },
+  {
+   "fieldname": "organizational_use",
+   "fieldtype": "Section Break",
+   "label": "For Organizational Use"
+  },
+  {
+   "fieldname": "column_break_eqmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "certificate_expiry_date",
+   "fieldtype": "Date",
+   "label": "Certificate Expiry Date"
+  },
+  {
+   "fieldname": "helpdesk_ticket_link",
+   "fieldtype": "Link",
+   "label": "HelpDesk Ticket",
+   "options": "HD Ticket",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ywkr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Draft",
+   "fieldname": "exp_app_status",
+   "fieldtype": "Select",
+   "label": "Application Status",
+   "options": "Draft\nUnder Review\nProcessing Payment\nApplication Approved\nApplication Rejected\nCancelled",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Investment Certificate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Investment Certificate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "type_investment",
+   "fieldtype": "Select",
+   "label": "Type of Investment",
+   "options": "New\nMerger\nPPP\nAcquisition\nExisting\nExpansion"
+  },
+  {
+   "fieldname": "main_sec_opera",
+   "fieldtype": "Data",
+   "label": "Main Sector of Operations",
+   "length": 128
+  },
+  {
+   "fieldname": "project_location",
+   "fieldtype": "Data",
+   "label": "Project Location",
+   "length": 128
+  },
+  {
+   "fieldname": "products_services",
+   "fieldtype": "Data",
+   "label": "Products/Services",
+   "length": 128
+  },
+  {
+   "description": "(Please attach, PDF, Word formats only)",
+   "fieldname": "business_plan_doc",
+   "fieldtype": "Attach",
+   "label": "Detailed Business Plan"
+  },
+  {
+   "description": "(3-5 Paged Summary of Project Which will be sent to the Environmental  Affairs Department to determine whether project requires Environmental Impact  Assessment Study). Only attach PDF or Word formats.",
+   "fieldname": "project_brief",
+   "fieldtype": "Attach",
+   "label": "Project Brief"
+  },
+  {
+   "description": "(Please attach PDF, Word formats only)",
+   "fieldname": "brief_descrip_expat_doc",
+   "fieldtype": "Attach",
+   "label": "Brief description of positions to be held by expatriates"
+  },
+  {
+   "default": "No",
+   "description": "(Failure to disclose may lead to revocation of certificate)",
+   "fieldname": "crime_disclosure",
+   "fieldtype": "Select",
+   "label": "Have you or any of the directors or the entity been convicted of any crime?",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "project_commencement_year",
+   "fieldtype": "Date",
+   "label": "Project Commencement Year"
+  },
+  {
+   "description": "(Where applicable)",
+   "fieldname": "reason_amend_rep_trans",
+   "fieldtype": "Data",
+   "label": "Reasons for Amendment, replacement or Transfer",
+   "length": 128
+  },
+  {
+   "fieldname": "project_financing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Project Financing Details"
+  },
+  {
+   "fieldname": "table_xrqt",
+   "fieldtype": "Table",
+   "options": "Project Financing Plan Row"
+  },
+  {
+   "fieldname": "pfd_total_foreign_usd",
+   "fieldtype": "Currency",
+   "label": "Total Foreign (USD)",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pfd_total_local_usd",
+   "fieldtype": "Currency",
+   "label": "Total Local (USD)",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pfd_grand_total_usd",
+   "fieldtype": "Currency",
+   "label": "Grand Total (USD)",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-16 08:02:34.792718",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Investment Certificate",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

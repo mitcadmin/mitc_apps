@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2026-02-24 10:16:21.911471",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dvle",
+  "first_name",
+  "last_name",
+  "id_document",
+  "nationality",
+  "phone_number",
+  "email",
+  "share_percentage",
+  "position",
+  "salutation"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "section_break_dvle",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "length": 128
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "id_document",
+   "fieldtype": "Attach Image",
+   "label": "ID/Passport"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "share_percentage",
+   "fieldtype": "Percent",
+   "label": "Shares(%) "
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Select",
+   "label": "Salutation",
+   "options": "Mr\nMrs\nDr\nProf\nHon\nMs\nMadam"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-03 08:30:40.360686",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Contact Names of Shareholders",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

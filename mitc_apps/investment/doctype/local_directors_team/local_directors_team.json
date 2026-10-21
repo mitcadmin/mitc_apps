@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-23 20:51:59.820863",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "local_directors_table",
+  "local_director_fname",
+  "local_director_lname",
+  "local_director_salutation",
+  "local_director_nationality",
+  "local_director_email",
+  "local_director_phone",
+  "local_director_id"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "local_directors_table",
+   "fieldtype": "Section Break",
+   "label": "Local Directors Team"
+  },
+  {
+   "fieldname": "local_director_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Identification Number",
+   "length": 128
+  },
+  {
+   "fieldname": "local_director_fname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "length": 128
+  },
+  {
+   "fieldname": "local_director_lname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "length": 128
+  },
+  {
+   "fieldname": "local_director_salutation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Salutation",
+   "length": 128,
+   "options": "Mr\nMrs\nDr\nProf\nHon\nMs\nMadam"
+  },
+  {
+   "fieldname": "local_director_nationality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nationality",
+   "length": 128
+  },
+  {
+   "fieldname": "local_director_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "length": 128
+  },
+  {
+   "fieldname": "local_director_phone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone",
+   "length": 128
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-01 15:39:45.314747",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Local Directors Team",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

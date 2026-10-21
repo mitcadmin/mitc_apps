@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-16 07:53:25.025644",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "funding_sources",
+  "total_foreign_usd",
+  "total_local_usd",
+  "grand_total_usd"
+ ],
+ "fields": [
+  {
+   "fieldname": "funding_sources",
+   "fieldtype": "Table",
+   "label": "Funding Sources",
+   "options": "Project Financing Plan Row"
+  },
+  {
+   "fieldname": "total_foreign_usd",
+   "fieldtype": "Currency",
+   "label": "Total Foreign (USD)",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_local_usd",
+   "fieldtype": "Currency",
+   "label": "Total Local (USD)",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total_usd",
+   "fieldtype": "Currency",
+   "label": "Grand Total (USD)",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-16 07:55:38.100456",
+ "modified_by": "Administrator",
+ "module": "Investment",
+ "name": "Project Financing Plan Table Headers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

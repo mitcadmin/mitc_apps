@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "autoname": "BANK-ACC-OPN-REC-LTT-.YYYY.-.####",
+ "creation": "2026-08-11 12:12:25.999966",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_1_tab",
+  "section_break_zsa9",
+  "date_of_app",
+  "first_name",
+  "last_name",
+  "other_names",
+  "email",
+  "phone_number",
+  "column_break_oauf",
+  "bus_reg_num",
+  "tax_id",
+  "section_break_quet",
+  "preferred_bank",
+  "column_break_pyyc",
+  "type_of_account",
+  "tab_3_tab",
+  "proof_of_payment",
+  "column_break_hwdm",
+  "personal_id",
+  "for_system_use_only_tab",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_1_tab",
+   "fieldtype": "Tab Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "section_break_zsa9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_app",
+   "fieldtype": "Date",
+   "label": "Date of Application"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "length": 64
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "length": 64
+  },
+  {
+   "fieldname": "other_names",
+   "fieldtype": "Data",
+   "label": "Other Names",
+   "length": 64
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Contact Email",
+   "length": 64
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Contact Phone Number"
+  },
+  {
+   "fieldname": "column_break_oauf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preferred_bank",
+   "fieldtype": "Select",
+   "label": "Preferred Bank",
+   "options": "National Bank of Malawi\nStandard Bank Malawi\nFirst Capital Bank\nCDH Investment Bank\nECOBank Malawi\nFDH Bank\nNBS Bank\nCentenary Bank Malawi"
+  },
+  {
+   "fieldname": "bus_reg_num",
+   "fieldtype": "Data",
+   "label": "Business Registration Number",
+   "length": 64
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID/TIN",
+   "length": 64
+  },
+  {
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "proof_of_payment",
+   "fieldtype": "Attach",
+   "label": "Proof of Payment"
+  },
+  {
+   "fieldname": "column_break_hwdm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "personal_id",
+   "fieldtype": "Attach",
+   "label": "Valid Identification Document (Passport, National ID, Drivers License)"
+  },
+  {
+   "fieldname": "for_system_use_only_tab",
+   "fieldtype": "Tab Break",
+   "label": "For System Use Only"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bank Account Opening Letter",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bank Account Opening Letter",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_quet",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_pyyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_account",
+   "fieldtype": "Data",
+   "label": "Type of Account"
+  }
+ ],
+ "grid_page_length": 50,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-11 12:20:10.533477",
+ "modified_by": "Administrator",
+ "module": "MITC Services",
+ "name": "Bank Account Opening Letter",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
